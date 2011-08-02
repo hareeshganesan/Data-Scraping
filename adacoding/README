@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+README
+======
+This application is meant to serve as a template for web applications for rapid coding.
+
+Actions (in order):
+
+Load a csv spreadsheet delimited by the '|' character into a sqlite3 database. 
+Syntax: python sqlcreate.py populate sample_data.csv
+
+Note: if the error 'table cases already exists' appears, remove old databases using 'rm /tmp/example'
+
+To run server, run 'python adacoding.py'
+
+To dump completed data, run 'python sqlcreate.py dump'
+The results will dump to the results.csv file. The csv file is delimited by '|'.
+
+
+=======
+This repository contains a collection of data scraping scripts to generate csv files for different websites.
+>>>>>>> 89f2e642e4299ccf838266e164fc9ae2428fde56

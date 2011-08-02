@@ -1,0 +1,33 @@
+<!doctype html>
+<title>Input Machine</title>
+
+{{ background }}
+
+<br />
+<br />
+
+{{ holding}}
+<br />
+<br />
+<form name="submit" action="/submit" method='POST'>
+Pro-Plaintiff:
+<select name ="plaintiff">
+<option value="TRUE">True</option>
+<option value="FALSE">False</option>
+</select>
+
+ADA:
+<select name ="ada">
+<option value="TRUE">True</option>
+<option value="FALSE">False</option>
+</select>
+
+Type:
+<select name ="type">
+<option value="TRUE">True</option>
+<option value="FALSE">False</option>
+</select>
+
+<input type="submit" value="Submit">
+<input type="hidden" name="caseid" value="{{caseid}}">
+</form>
