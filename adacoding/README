@@ -9,7 +9,7 @@ Syntax: python sqlcreate.py populate sample_data.csv
 
 Note: if the error 'table cases already exists' appears, remove old databases using 'rm /tmp/example'
 
-To run server, run 'python launch.py'
+To run server, run 'sudo python launch.py'
 
 To dump completed data, run 'python sqlcreate.py dump'
 The results will dump to the results.csv file. The csv file is delimited by '|'.
