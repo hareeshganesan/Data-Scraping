@@ -2,7 +2,6 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-
 import sqlite3
 app = Flask(__name__)
 
@@ -29,7 +28,6 @@ def ada_coder():
 def submit():
 	conn = connect_db()
 	c = conn.cursor()
-	c = conn.cursor()
 	c.execute("""select * from cases where caseid='"""+request.form['caseid']+"'")
 	if(c.fetchone()[6]=='TRUE'):
 	  return "Data submitted improperly. Please refresh your page."
@@ -43,6 +41,6 @@ def submit():
 	return "Thanks for submitting"
 
 if __name__=='__main__':
-	app.debug =True
-	app.run()
+	app.debug=True	
+	app.run(port=6542)
 
